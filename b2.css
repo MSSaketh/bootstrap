@@ -1,0 +1,9 @@
+.row li {
+    margin: auto;
+    display: inline;
+    padding-right: 20px;
+    text-align: end;
+  }
+  .jumbotron{
+    font-family: Pacifico, cursive;
+  }
