@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Bootstrap Example</title>
+        <title>OnePlus 6</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -18,7 +18,7 @@
         <div class="container-fluid">
 
 
-                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
                         <!-- Brand/logo -->
                         <a href="#">
                                 <img src="img/OnePlus_logo.png" alt="OnePlus" height="50px">
@@ -33,14 +33,44 @@
                                         <a class="nav-link" href="#tech specs">Tech Specs</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="#">Login</a>
+                                        <a class="nav-link" data-toggle="modal" href="#loginmodal">Login</a>
+                                        <div class="modal" id="loginmodal">
+                                                <div class="modal-dailog">
+                                                        <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                        <h5 class="modal-title">Login</h5>
+                                                                        <button class="close" data-dismiss="modal">&times;</button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                        <form>
+                                                                                <div class="form-group">
+                                                                                        <label for="username">Username</label>
+                                                                                        <input type="text" placeholder="Username" class="form-control">
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                        <label for="password">Password</label>
+                                                                                        <input type="password" placeholder="Password" class="form-control">
+                                                                                </div>
+                                                                        </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                        <button class="btn btn-primary" data-dismiss="modal">Login</button>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
                                 </li>
                         </ul>
                         <!--flex box-->
-                        <div class="d-flex flex-row-end bg-secondary">
 
-
-                                <button type="button" class="btn">
+                        <div class="d-flex ml-auto">
+                                <button type="button" class="btn-success" title="Out of Stock!!" data-toggle="popover" data-placement="bottom" data-content="Try later">
+                                        <script>
+                                                $(function () {
+                                                        $('[data-toggle="popover"]').popover()
+                                                })
+                                        </script>
                                         <div class="p-2">Buy Now</div>
                                 </button>
 
@@ -49,9 +79,11 @@
                 </nav>
                 <!--jumbotron 1-->
                 <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
+
                         <h1>OnePlus 6</h1>
                         <h1 class="display-3 text-center">The Speed You Need.</h1>
                         <h2>From ₹34,999</h2>
+
                 </div>
 
                 <div id="demo" class="carousel slide" data-ride="carousel">
@@ -94,9 +126,9 @@
                         <div class="row">
                                 <div class="col-lg-4">
                                         <img src="img/one6.jpg" alt="OnePlus" width="250px">
-                                        <button data-toggle="collapse" data-target="#col1">
+                                        <a data-toggle="collapse" data-toggle="tooltip" title="click here to know!" href="#col1">
                                                 <h3>Faster apps.</h3>
-                                        </button>
+                                        </a>
 
                                         <div id="col1" class="collapse">
 
@@ -112,21 +144,28 @@
                                 </div>
                                 <div class="col-lg-4">
                                         <img src="img/charge1.jpg" alt="OnePlus" width="250px" height="380px">
-                                        <h3>A day’s power in half an hour.
-                                        </h3>
-                                        <p>OnePlus Fast Charge offers a faster kind of fast charging. It’s not just fast when
-                                                the screen is off. It also maintains its incredibly fast charging speed while
-                                                you’re using your OnePlus 6, so you don’t have to pause that movie to charge
-                                                up.
-                                        </p>
+                                        <a data-toggle="collapse" data-toggle="tooltip" title="click here to know!" href="#col2">
+                                                <h3>A day’s power in half an hour.</h3>
+                                        </a>
+                                        <div id="col2" class="collapse">
+                                                <p>OnePlus Fast Charge offers a faster kind of fast charging. It’s not just
+                                                        fast when the screen is off. It also maintains its incredibly fast
+                                                        charging speed while you’re using your OnePlus 6, so you don’t have
+                                                        to pause that movie to charge up.
+                                                </p>
+                                        </div>
                                 </div>
                                 <div class="col-lg-4">
                                         <img src="img/moreram.jpg" alt="OnePlus" width="185px" height="auto">
-                                        <h3>More RAM, faster performance.</h3>
-                                        <p>Everything you do on your OnePlus 6 uses RAM. More RAM means more speed. Watch a
-                                                video, play a game and browse social media, then switch between them in an
-                                                instant. We want to speed up your experience, so you can do everything you
-                                                want to do in less time. That’s why we love RAM.</p>
+                                        <a data-toggle="collapse" data-toggle="tooltip" title="click here to know!" href="#col3">
+                                                <h3>More RAM, faster performance.</h3>
+                                        </a>
+                                        <div id="col3" class="collapse">
+                                                <p>Everything you do on your OnePlus 6 uses RAM. More RAM means more speed.
+                                                        Watch a video, play a game and browse social media, then switch between
+                                                        them in an instant. We want to speed up your experience, so you can
+                                                        do everything you want to do in less time. That’s why we love RAM.</p>
+                                        </div>
                                 </div>
                         </div>
                 </div>
