@@ -1,18 +1,26 @@
 .row li {
-    margin: auto;
-    display: inline;
-    padding-right: 20px;
-    text-align: end;
-  }
-  .jumbotron {
-    font-family: Pacifico, cursive;
-  }
-  .jumbotron a:hover {
-    text-decoration: none;
-    color: red;
-  }
-  a h3 {
-    text-decoration: none;
-    color: black;
-  }
-  
+  margin: auto;
+  display: inline;
+  padding-right: 20px;
+  text-align: end;
+}
+.jumbotron {
+  font-family: Pacifico, cursive;
+}
+.jumbotron a:hover {
+  text-decoration: none;
+  color: red;
+}
+a h3 {
+  text-decoration: none;
+  color: black;
+}
+.test {
+margin-right: 20%;
+}
+.btn{
+  margin-left: 10px;
+}
+/* .card-body{
+  margin: 30px;
+} */
