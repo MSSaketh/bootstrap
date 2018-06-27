@@ -7,12 +7,19 @@
 .foot li{
   margin-left: 20%;
 }
+video{
+  width: 100%;
+}
 .jumbotron {
   font-family: Pacifico, cursive;
 }
 .jumbotron a:hover {
   text-decoration: none;
   color: red;
+}
+.imge{
+  width: 100%;
+  height: 375px;
 }
 a h3 {
   text-decoration: none;
