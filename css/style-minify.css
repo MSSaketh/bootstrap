@@ -1,0 +1,42 @@
+.imge,
+.pic,
+video {
+  width: 100%;
+}
+.row li {
+  margin: auto;
+  display: inline;
+  padding-right: 20px;
+  text-align: end;
+}
+.foot li {
+  margin-left: 20%;
+}
+.oneplus {
+  font-family: Pacifico, cursive;
+}
+.plus {
+  font-family: sans-serif;
+}
+.jumbotron a:hover {
+  text-decoration: none;
+  color: red;
+}
+a h3 {
+  text-decoration: none;
+  color: #000;
+}
+.test {
+  margin-right: 20%;
+}
+.btn {
+  margin-left: 10px;
+}
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icons {
+  font-size: 30px;
+}
